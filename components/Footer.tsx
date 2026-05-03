@@ -62,10 +62,13 @@ export default function Footer() {
                 <span className="text-gray-400">TeamBuilder</span>
               </li>
               <li>
-                <span className="text-gray-400">Tech Agent</span>
+                <span className="text-gray-400">Market Analysis</span>
               </li>
               <li>
                 <span className="text-gray-400">Green Analysis</span>
+              </li>
+              <li>
+                <span className="text-gray-400">Tech Agent</span>
               </li>
             </ul>
           </div>

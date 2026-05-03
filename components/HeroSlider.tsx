@@ -20,6 +20,13 @@ const slides = [
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=800&fit=crop&q=80',
   },
   {
+    title: 'Market Analysis',
+    subtitle: 'AI Market Intelligence',
+    description: 'Get competitive analysis, market positioning strategy, and SWOT insights with multi-agent web scraping to understand your market landscape.',
+    gradient: 'from-pink-500 to-rose-600',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&q=80',
+  },
+  {
     title: 'Green Analysis',
     subtitle: 'Environmental & ESG Platform',
     description: 'Measure your environmental impact, get ESG scores, access green certifications, and unlock sustainable financing opportunities for your startup.',

@@ -20,7 +20,7 @@ export default function Home() {
                 Everything You Need to Succeed
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Four powerful AI modules working together to help your startup thrive
+                Five powerful AI modules working together to help your startup thrive
               </p>
             </div>
 
@@ -96,6 +96,45 @@ export default function Home() {
                   </li>
                 </ul>
                 <Link href="/features#teambuilder" className="text-indigo-600 font-semibold hover:text-purple-700 inline-flex items-center">
+                  Learn more
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+
+              {/* Market Analysis */}
+              <div className="glass rounded-3xl p-8 hover:shadow-2xl transition-all group">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Market Analysis</h3>
+                <p className="text-gray-600 mb-6">
+                  AI-powered market intelligence with competitive analysis, SWOT insights, and positioning strategy using multi-agent web scraping.
+                </p>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Competitive analysis & SWOT</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Market opportunity scoring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-gray-700">Positioning strategy</span>
+                  </li>
+                </ul>
+                <Link href="/features#marketanalysis" className="text-pink-600 font-semibold hover:text-pink-700 inline-flex items-center">
                   Learn more
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
