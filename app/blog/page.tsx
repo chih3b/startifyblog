@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { posts } from '@/lib/posts';
 
 export default function BlogPage() {
@@ -34,20 +35,24 @@ export default function BlogPage() {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="glass rounded-2xl overflow-hidden hover:shadow-2xl transition-all group"
+                  className="glass rounded-2xl overflow-hidden hover:shadow-2xl transition-all group flex flex-col"
                 >
-                  {/* Image Placeholder with Gradient */}
-                  <div className={`h-48 bg-gradient-to-br ${
-                    post.category === 'Legal & Compliance' ? 'from-emerald-400 to-teal-500' :
-                    post.category === 'HR & Recruitment' ? 'from-purple-400 to-pink-500' :
-                    post.category === 'Sustainability & ESG' ? 'from-green-400 to-lime-500' :
-                    post.category === 'Funding & Investment' ? 'from-blue-400 to-indigo-500' :
-                    'from-teal-400 to-emerald-500'
-                  } flex items-center justify-center relative overflow-hidden`}>
-                    <div className="absolute inset-0 bg-black/10"></div>
-                    <svg className="w-16 h-16 text-white opacity-50 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                    </svg>
+                  {/* Image */}
+                  <div className="relative h-56 overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    {/* Category Badge */}
+                    <div className="absolute top-4 left-4">
+                      <span className="text-xs font-bold text-white bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+                        {post.category}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Content */}

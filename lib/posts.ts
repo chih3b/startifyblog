@@ -17,7 +17,7 @@ export const posts: Post[] = [
     date: '2026-05-01',
     category: 'Legal & Compliance',
     readTime: '8 min read',
-    image: '/blog/startup-act.jpg',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop&q=80',
     content: `
 # Understanding the Tunisian Startup Act: Complete Guide for Entrepreneurs
 
@@ -151,7 +151,7 @@ Ready to apply for your startup label? [Try Startify](http://localhost:3000) to 
     date: '2026-04-28',
     category: 'HR & Recruitment',
     readTime: '10 min read',
-    image: '/blog/ai-recruitment.jpg',
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop&q=80',
     content: `
 # AI-Powered Recruitment: How to Build Your Dream Team in 2026
 
@@ -414,7 +414,7 @@ Ready to transform your recruitment process? [Try TeamBuilder](http://localhost:
     date: '2026-04-25',
     category: 'Legal & Compliance',
     readTime: '12 min read',
-    image: '/blog/compliance.jpg',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&q=80',
     content: `
 # Legal Compliance Checklist for Tunisian Startups
 
@@ -796,7 +796,7 @@ Need help staying compliant? [Try ComplianceGuard](http://localhost:3000) for au
     date: '2026-04-20',
     category: 'Sustainability & ESG',
     readTime: '9 min read',
-    image: '/blog/sustainability.jpg',
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop&q=80',
     content: `
 # Building a Sustainable Startup: Green Business Practices for Tunisian Entrepreneurs
 
@@ -1235,7 +1235,7 @@ Ready to assess your startup's sustainability? [Try Green Analysis](http://local
     date: '2026-04-15',
     category: 'Funding & Investment',
     readTime: '15 min read',
-    image: '/blog/fundraising.jpg',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80',
     content: `
 # The Complete Fundraising Guide for Tunisian Startups
 

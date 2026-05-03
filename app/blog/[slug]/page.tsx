@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { posts } from '@/lib/posts';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
@@ -24,39 +25,52 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <Header />
       
       <main className="flex-1 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
-        {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-r from-teal-600 to-emerald-600 text-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Breadcrumb */}
-            <div className="mb-6">
-              <Link href="/blog" className="text-white/80 hover:text-white transition-colors">
-                ← Back to Blog
-              </Link>
-            </div>
+        {/* Hero Image */}
+        <section className="relative h-[500px] overflow-hidden">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          
+          {/* Hero Content */}
+          <div className="absolute inset-0 flex items-end">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
+              {/* Breadcrumb */}
+              <div className="mb-6">
+                <Link href="/blog" className="text-white/80 hover:text-white transition-colors">
+                  ← Back to Blog
+                </Link>
+              </div>
 
-            {/* Category & Read Time */}
-            <div className="flex items-center gap-4 mb-4">
-              <span className="text-sm font-semibold bg-white/20 px-4 py-1 rounded-full">
-                {post.category}
-              </span>
-              <span className="text-sm opacity-80">{post.readTime}</span>
-            </div>
+              {/* Category & Read Time */}
+              <div className="flex items-center gap-4 mb-4">
+                <span className="text-sm font-semibold bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+                  {post.category}
+                </span>
+                <span className="text-sm text-white/90">{post.readTime}</span>
+              </div>
 
-            {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
-              {post.title}
-            </h1>
+              {/* Title */}
+              <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight text-white">
+                {post.title}
+              </h1>
 
-            {/* Date */}
-            <div className="flex items-center text-sm opacity-80">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              {new Date(post.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
+              {/* Date */}
+              <div className="flex items-center text-sm text-white/80">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </div>
             </div>
           </div>
         </section>
