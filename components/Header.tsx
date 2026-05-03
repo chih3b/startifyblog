@@ -21,21 +21,17 @@ export default function Header() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'glass border-b border-white/20 shadow-lg' 
-        : 'bg-white/80 backdrop-blur-md border-b border-gray-200/50'
-    }`}>
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-200/50 shadow-lg">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <div className="relative w-16 h-16 transition-transform group-hover:scale-110">
+            <div className="relative w-32 h-20 transition-transform group-hover:scale-105">
               <Image
-                src="/logo.png"
-                alt="Startify"
+                src="/nexaura.png"
+                alt="Nexaura"
                 fill
-                sizes="64px"
+                sizes="128px"
                 className="object-contain"
                 priority
               />
@@ -48,8 +44,8 @@ export default function Header() {
               href="/" 
               className={`px-4 py-2 rounded-lg transition-all font-medium ${
                 isActive('/') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:text-violet-600 hover:bg-violet-50/50'
               }`}
             >
               Home
@@ -58,8 +54,8 @@ export default function Header() {
               href="/blog" 
               className={`px-4 py-2 rounded-lg transition-all font-medium ${
                 isActive('/blog') || pathname?.startsWith('/blog/') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:text-violet-600 hover:bg-violet-50/50'
               }`}
             >
               Blog
@@ -68,8 +64,8 @@ export default function Header() {
               href="/features" 
               className={`px-4 py-2 rounded-lg transition-all font-medium ${
                 isActive('/features') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:text-violet-600 hover:bg-violet-50/50'
               }`}
             >
               Features
@@ -78,8 +74,8 @@ export default function Header() {
               href="/team" 
               className={`px-4 py-2 rounded-lg transition-all font-medium ${
                 isActive('/team') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:text-violet-600 hover:bg-violet-50/50'
               }`}
             >
               Team
@@ -88,8 +84,8 @@ export default function Header() {
               href="/contact" 
               className={`px-4 py-2 rounded-lg transition-all font-medium ${
                 isActive('/contact') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:text-violet-600 hover:bg-violet-50/50'
               }`}
             >
               Contact
@@ -97,9 +93,9 @@ export default function Header() {
             <div className="ml-4">
               <Link
                 href="http://localhost:3000"
-                className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-full hover:shadow-xl hover:scale-105 transition-all font-semibold inline-flex items-center gap-2"
+                className="px-6 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full hover:shadow-xl hover:scale-105 transition-all font-semibold inline-flex items-center gap-2"
               >
-                Try Startify
+                Try Nexaura
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -109,11 +105,11 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -130,8 +126,8 @@ export default function Header() {
               href="/" 
               className={`block px-4 py-3 rounded-lg transition-all font-medium ${
                 isActive('/') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:bg-violet-50/50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -141,8 +137,8 @@ export default function Header() {
               href="/blog" 
               className={`block px-4 py-3 rounded-lg transition-all font-medium ${
                 isActive('/blog') || pathname?.startsWith('/blog/') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:bg-violet-50/50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -152,8 +148,8 @@ export default function Header() {
               href="/features" 
               className={`block px-4 py-3 rounded-lg transition-all font-medium ${
                 isActive('/features') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:bg-violet-50/50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -163,8 +159,8 @@ export default function Header() {
               href="/team" 
               className={`block px-4 py-3 rounded-lg transition-all font-medium ${
                 isActive('/team') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:bg-violet-50/50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -174,8 +170,8 @@ export default function Header() {
               href="/contact" 
               className={`block px-4 py-3 rounded-lg transition-all font-medium ${
                 isActive('/contact') 
-                  ? 'text-teal-600 bg-teal-50' 
-                  : 'text-gray-700 hover:bg-teal-50/50'
+                  ? 'text-violet-600 bg-violet-50' 
+                  : 'text-gray-700 hover:bg-violet-50/50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -184,10 +180,10 @@ export default function Header() {
             <div className="pt-2">
               <Link
                 href="http://localhost:3000"
-                className="block mx-4 px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-full text-center font-semibold hover:shadow-lg transition-all"
+                className="block mx-4 px-6 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full text-center font-semibold hover:shadow-lg transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Try Startify →
+                Try Nexaura →
               </Link>
             </div>
           </div>

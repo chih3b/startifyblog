@@ -9,7 +9,7 @@ export default function FeaturesPage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-r from-teal-600 to-emerald-600 text-white">
+        <section className="py-16 bg-gradient-to-r from-violet-600 to-indigo-600 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-5xl md:text-6xl font-black mb-4">
               Powerful Features for Startups
@@ -409,17 +409,17 @@ export default function FeaturesPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-teal-600 to-emerald-600 text-white">
+        <section className="py-20 bg-gradient-to-br from-violet-600 to-indigo-600 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Experience These Features?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Start using Startify today and transform how you build your startup
+              Start using Nexaura today and transform how you build your startup
             </p>
             <Link
               href="http://localhost:3000"
-              className="inline-block px-8 py-4 bg-white text-teal-600 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
+              className="inline-block px-8 py-4 bg-white text-violet-600 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
             >
               Get Started Free
             </Link>

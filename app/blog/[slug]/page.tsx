@@ -24,7 +24,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-1 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
+      <main className="flex-1 bg-gradient-to-br from-violet-50 via-white to-indigo-50">
         {/* Hero Image */}
         <section className="relative h-[500px] overflow-hidden">
           <Image
@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <strong className="font-bold text-gray-900">{children}</strong>
                   ),
                   a: ({ href, children }) => (
-                    <a href={href} className="text-teal-600 hover:text-teal-700 underline">
+                    <a href={href} className="text-violet-600 hover:text-violet-700 underline">
                       {children}
                     </a>
                   ),
@@ -127,7 +127,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </blockquote>
                   ),
                   code: ({ children }) => (
-                    <code className="bg-gray-100 text-teal-600 px-2 py-1 rounded text-sm font-mono">
+                    <code className="bg-gray-100 text-violet-600 px-2 py-1 rounded text-sm font-mono">
                       {children}
                     </code>
                   ),
@@ -139,7 +139,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </div>
                   ),
                   thead: ({ children }) => (
-                    <thead className="bg-teal-50">{children}</thead>
+                    <thead className="bg-violet-50">{children}</thead>
                   ),
                   tbody: ({ children }) => (
                     <tbody className="bg-white divide-y divide-gray-200">{children}</tbody>
@@ -170,13 +170,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 Ready to Apply These Insights?
               </h3>
               <p className="text-gray-600 mb-6">
-                Get AI-powered assistance for your startup with Startify
+                Get AI-powered assistance for your startup with Nexaura
               </p>
               <Link
                 href="http://localhost:3000"
-                className="inline-block px-8 py-4 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
+                className="inline-block px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
               >
-                Try Startify Free
+                Try Nexaura Free
               </Link>
             </div>
 
@@ -193,10 +193,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       href={`/blog/${relatedPost.slug}`}
                       className="glass rounded-xl p-6 hover:shadow-xl transition-all group"
                     >
-                      <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
+                      <span className="text-xs font-semibold text-violet-600 bg-violet-50 px-3 py-1 rounded-full">
                         {relatedPost.category}
                       </span>
-                      <h4 className="text-lg font-bold text-gray-900 mt-3 mb-2 group-hover:text-teal-600 transition-colors line-clamp-2">
+                      <h4 className="text-lg font-bold text-gray-900 mt-3 mb-2 group-hover:text-violet-600 transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h4>
                       <p className="text-sm text-gray-600 line-clamp-2">

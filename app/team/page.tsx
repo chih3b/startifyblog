@@ -38,11 +38,11 @@ export default function TeamPage() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-teal-50 via-emerald-50 to-cyan-50 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
               Meet Our Team
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              The passionate people behind Startify, working to empower Tunisian entrepreneurs
+              The passionate people behind Nexaura, working to empower Tunisian entrepreneurs
             </p>
           </div>
         </section>
@@ -87,8 +87,8 @@ export default function TeamPage() {
               We're always looking for talented individuals who are passionate about helping startups succeed
             </p>
             <a
-              href="mailto:careers@startify.tn"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
+              href="mailto:careers@nexaura.tn"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
             >
               Get in Touch
             </a>

@@ -125,7 +125,7 @@ Ensure all company documents are:
 - Properly certified
 - Translated if necessary
 
-## How Startify Can Help
+## How Nexaura Can Help
 
 **ComplianceGuard**, our AI-powered legal assistant, can help you:
 - ✅ Generate required legal documents
@@ -137,7 +137,7 @@ Ensure all company documents are:
 
 The Tunisian Startup Act offers incredible opportunities for entrepreneurs. By understanding the requirements and following the proper procedures, you can unlock significant benefits for your startup.
 
-Ready to apply for your startup label? [Try Startify](http://localhost:3000) to streamline your compliance journey.
+Ready to apply for your startup label? [Try Nexaura](http://localhost:3000) to streamline your compliance journey.
 
 ---
 
@@ -753,7 +753,7 @@ Depending on your activity:
 - HR consultants
 - Data protection officers
 
-### Startify ComplianceGuard
+### Nexaura ComplianceGuard
 **Automate your compliance:**
 - ✅ Document generation
 - ✅ Compliance scoring
@@ -1040,7 +1040,7 @@ Sustainability is no longer optional—it's a competitive advantage. This guide 
 - Algebra Ventures
 - International impact funds
 
-## Startify's Green Analysis Module
+## Nexaura's Green Analysis Module
 
 ### AI-Powered Sustainability Assessment
 
@@ -1213,7 +1213,7 @@ Sustainability is no longer optional—it's a competitive advantage. This guide 
 - Conect Green Economy Club
 
 ### Tools & Platforms
-- **Startify Green Analysis:** Comprehensive ESG assessment
+- **Nexaura Green Analysis:** Comprehensive ESG assessment
 - **Carbon Footprint Calculator:** Free online tools
 - **GHG Protocol:** Emission calculation standards
 
@@ -1743,7 +1743,7 @@ Raising capital is one of the most challenging aspects of building a startup. Th
 - Joint ventures
 - Market access
 
-## Startify Tools for Fundraising
+## Nexaura Tools for Fundraising
 
 ### ComplianceGuard
 - Generate investment agreements
@@ -1769,7 +1769,7 @@ Fundraising is a marathon, not a sprint. Success requires preparation, persisten
 
 Remember: The best time to raise money is when you don't desperately need it. Start building relationships with investors early, even before you're ready to raise.
 
-Ready to prepare for your fundraising round? [Try Startify](http://localhost:3000) to ensure your legal and team foundations are solid.
+Ready to prepare for your fundraising round? [Try Nexaura](http://localhost:3000) to ensure your legal and team foundations are solid.
 
 ---
 

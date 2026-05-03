@@ -14,12 +14,12 @@ export default function BlogPage() {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-1 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
+      <main className="flex-1 bg-gradient-to-br from-violet-50 via-white to-indigo-50">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-r from-teal-600 to-emerald-600 text-white">
+        <section className="py-16 bg-gradient-to-r from-violet-600 to-indigo-600 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-5xl md:text-6xl font-black mb-4">
-              Startify Blog
+              Nexaura Blog
             </h1>
             <p className="text-xl md:text-2xl opacity-90 max-w-3xl">
               Insights, guides, and resources for Tunisian entrepreneurs building the future
@@ -59,14 +59,14 @@ export default function BlogPage() {
                   <div className="p-6">
                     {/* Category & Read Time */}
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
+                      <span className="text-xs font-semibold text-violet-600 bg-violet-50 px-3 py-1 rounded-full">
                         {post.category}
                       </span>
                       <span className="text-xs text-gray-500">{post.readTime}</span>
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-violet-600 transition-colors line-clamp-2">
                       {post.title}
                     </h2>
 
@@ -100,11 +100,11 @@ export default function BlogPage() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Join Startify and get AI-powered assistance for your startup
+              Join Nexaura and get AI-powered assistance for your startup
             </p>
             <Link
               href="http://localhost:3000"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
             >
               Get Started Free
             </Link>
