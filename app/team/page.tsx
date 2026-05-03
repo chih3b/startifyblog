@@ -27,6 +27,10 @@ const team = [
     name: 'Youssef Ben Lallahom',
     image: '/team/youssef ben lallahom.png',
   },
+  {
+    name: 'Emna Masmoudi',
+    image: '/team/emna masmoudi.jpeg',
+  },
 ];
 
 export default function TeamPage() {
