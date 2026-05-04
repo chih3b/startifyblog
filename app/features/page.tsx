@@ -214,6 +214,103 @@ export default function FeaturesPage() {
           </div>
         </section>
 
+        {/* Market Analysis Features */}
+        <section id="marketanalysis" className="py-20 bg-gradient-to-br from-pink-50 via-white to-rose-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-block px-6 py-2 bg-pink-100 text-pink-700 rounded-full font-semibold mb-4">
+                Market Analysis
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+                AI Market Intelligence
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Understand your market landscape with competitive analysis and strategic insights
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Feature 1 */}
+              <div className="glass rounded-2xl p-8 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">SWOT Analysis</h3>
+                <p className="text-gray-600">
+                  AI-powered SWOT analysis identifying your strengths, weaknesses, opportunities, and threats in the market.
+                </p>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="glass rounded-2xl p-8 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Competitive Analysis</h3>
+                <p className="text-gray-600">
+                  Identify and analyze competitors with multi-agent web scraping to understand their positioning and strategies.
+                </p>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="glass rounded-2xl p-8 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Market Opportunity Scoring</h3>
+                <p className="text-gray-600">
+                  Quantitative assessment of market viability, opportunity size, and competition risk with actionable recommendations.
+                </p>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="glass rounded-2xl p-8 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Positioning Strategy</h3>
+                <p className="text-gray-600">
+                  Strategic recommendations for market positioning, differentiation, and go-to-market approach based on competitive landscape.
+                </p>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="glass rounded-2xl p-8 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Multi-Agent Web Scraping</h3>
+                <p className="text-gray-600">
+                  Real-time market intelligence gathering using AI agents that scrape and analyze competitor websites and market data.
+                </p>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="glass rounded-2xl p-8 hover:shadow-xl transition-all">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Market Reports</h3>
+                <p className="text-gray-600">
+                  Generate comprehensive market analysis reports with competitive insights, opportunity assessment, and strategic recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Green Analysis Features */}
         <section id="greenanalysis" className="py-20 bg-gradient-to-br from-green-50 via-white to-lime-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
